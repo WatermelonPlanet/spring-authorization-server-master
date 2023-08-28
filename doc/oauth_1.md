@@ -16,5 +16,8 @@
   * idea中的 gradle也需要设置jdk版本 不是出现无效jdk的问题(基于maven的就跳过)
   * gradle(spring项目都是gradle构建、并没有采用maven) 提供了一个基于maven的最原始的demo：https://github.com/WatermelonPlanet/spring-authorization-server-demo/tree/master/original-demo
 
-
 3.👉 运行demo
+
+* demo-authorizationserver[授权服务]
+* demo-client[客户端]
+* messages-resource[资源服务]
