@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-authorization-server-demo</artifactId>
+        <groupId>com.demo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.original.demo</groupId>
+    <artifactId>original-demo</artifactId>
+    <description> spring-authorization-server 基于maven构建的官方原始demo</description>
+    <packaging>pom</packaging>
+
+
+    <modules>
+        <module>demo-authorizationserver</module>
+        <module>messages-resource</module>
+        <module>demo-client</module>
+    </modules>
+
+
+
+</project>
