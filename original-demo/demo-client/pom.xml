@@ -57,6 +57,12 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.6.4</version>
+        </dependency>
+
 
         <!-- spring-boot-starter-web 依赖 -->
         <dependency>

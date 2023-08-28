@@ -14,8 +14,7 @@
       Exception in thread "main" java.lang.NoClassDefFoundError: kotlin/Result
     ````
   * idea中的 gradle也需要设置jdk版本 不是出现无效jdk的问题(基于maven的就跳过)
-  * gradle(spring项目都是gradle构建、并没有采用maven) 提供了一个基于maven的一个最原始的demo
+  * gradle(spring项目都是gradle构建、并没有采用maven) 提供了一个基于maven的最原始的demo：https://github.com/WatermelonPlanet/spring-authorization-server-demo/tree/master/original-demo
 
 
-
-3.👉 
+3.👉 运行demo
