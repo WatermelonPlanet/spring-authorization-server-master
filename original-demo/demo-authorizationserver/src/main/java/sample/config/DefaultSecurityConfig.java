@@ -15,6 +15,9 @@
  */
 package sample.config;
 
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
 import sample.federation.FederatedIdentityAuthenticationSuccessHandler;
 
 import org.springframework.context.annotation.Bean;
@@ -40,34 +43,34 @@ import org.springframework.security.web.session.HttpSessionEventPublisher;
 @Configuration(proxyBeanMethods = false)
 public class DefaultSecurityConfig {
 
-	// @formatter:off
+	// 过滤器链
 	@Bean
 	public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
 		http
-			.authorizeHttpRequests(authorize ->
-				authorize
-					.requestMatchers("/assets/**", "/webjars/**", "/login").permitAll()
-					.anyRequest().authenticated()
-			)
-			.formLogin(formLogin ->
-				formLogin
-					.loginPage("/login")
-			)
-			.oauth2Login(oauth2Login ->
-				oauth2Login
-					.loginPage("/login")
-					.successHandler(authenticationSuccessHandler())
-			);
+				.authorizeHttpRequests(authorize ->//① 配置鉴权的
+						authorize
+								.requestMatchers("/assets/**", "/webjars/**", "/login","/oauth2/**","/oauth2/token").permitAll() //② 忽略鉴权的url
+								.anyRequest().authenticated()//③ 排除忽略的其他url就需要鉴权了
+				)
+				.formLogin(formLogin ->
+						formLogin
+								.loginPage("/login")//④ 授权服务认证页面（可以配置相对和绝对地址，前后端分离的情况下填前端的url）
+				)
+				.oauth2Login(oauth2Login ->
+						oauth2Login
+								.loginPage("/login")//⑤ oauth2的认证页面（也可配置绝对地址）
+								.successHandler(authenticationSuccessHandler())//⑥ 登录成功后的处理
+				);
 
 		return http.build();
 	}
-	// @formatter:on
+
 
 	private AuthenticationSuccessHandler authenticationSuccessHandler() {
 		return new FederatedIdentityAuthenticationSuccessHandler();
 	}
 
-	// @formatter:off
+	// 初始化了一个用户在内存里面（这样就不会每次启动就再去生成密码了）
 	@Bean
 	public UserDetailsService users() {
 		UserDetails user = User.withDefaultPasswordEncoder()
@@ -77,7 +80,7 @@ public class DefaultSecurityConfig {
 				.build();
 		return new InMemoryUserDetailsManager(user);
 	}
-	// @formatter:on
+
 
 	@Bean
 	public SessionRegistry sessionRegistry() {
@@ -88,5 +91,22 @@ public class DefaultSecurityConfig {
 	public HttpSessionEventPublisher httpSessionEventPublisher() {
 		return new HttpSessionEventPublisher();
 	}
+
+
+	    /**
+     * 跨域过滤器配置
+     * @return
+     */
+    @Bean
+    public CorsFilter corsFilter() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.addAllowedOrigin("*");
+        configuration.setAllowCredentials(true);
+        configuration.addAllowedMethod("*");
+        configuration.addAllowedHeader("*");
+        UrlBasedCorsConfigurationSource configurationSource = new UrlBasedCorsConfigurationSource();
+        configurationSource.registerCorsConfiguration("/**", configuration);
+        return new CorsFilter(configurationSource);
+    }
 
 }
