@@ -1,4 +1,4 @@
-## Spring Authorization Server (1) 初步认识
+## 😄Spring Authorization Server (1) oauth2.1、oidc 1.0 初步认识
 
 ### Spring Authorization Server 是什么呢？
 
