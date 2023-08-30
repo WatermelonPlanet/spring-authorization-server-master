@@ -240,5 +240,7 @@ demo-client可以把它看作我们的【网关服务】，demo-authorizationser
 
 <iframe src="html/video_1.html" frameborder="0" allowfullscreen></iframe>
 
+[![demo视频]](html/video_1.html)
+
 
 **希望以上流程能够帮助到理解😄**
