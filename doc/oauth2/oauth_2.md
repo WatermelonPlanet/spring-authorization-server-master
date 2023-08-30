@@ -1,4 +1,4 @@
-😄 ## 😄Spring Authorization Server (2) 【授权服务、资源服务、客户端服务】初步认识
+## 😄Spring Authorization Server (2) 【授权服务、资源服务、客户端服务】初步认识
 
 ### demo-authorizationserver[授权服务]
 
@@ -235,10 +235,10 @@
 
 ![img_10.png](image/img_10.png)
 
-demo-client可以把它看作我们的【网关服务】，demo-authorizationserver可以看作我们的【认证服务】，messages-resource可以看作【业务服务】，你这样去理解是否能够理解oauth2的这个流程了呢，
+demo-client可以把它看作我们的【网关服务】，demo-authorizationserver可以看作我们的【认证服务】，messages-resource可以看作【业务服务】，你这样去理解是否能够理解oauth2的这个流程了呢。
 
 
 <iframe src="html/video_1.html" frameborder="0" allowfullscreen></iframe>
 
 
-**希望以上流程能够帮助到理解😄 **
+**希望以上流程能够帮助到理解😄**
