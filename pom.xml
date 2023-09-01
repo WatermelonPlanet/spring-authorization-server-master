@@ -10,15 +10,16 @@
     </parent>
 
 
-    <groupId>com.demo</groupId>
-    <artifactId>spring-authorization-server-demo</artifactId>
+    <groupId>com.oauth2</groupId>
+    <artifactId>spring-authorization-server-oauth2</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <description>spring-authorization-serve demo</description>
+    <description>spring authorization server oauth2 </description>
     <packaging>pom</packaging>
 
 
     <modules>
         <module>original-demo</module>
+        <module>auth-cloud</module>
     </modules>
 
 

@@ -6,23 +6,42 @@ spring:
     oauth2:
       client:
         registration:
-          google-idp:
-            provider: google
-            client-id: ${GOOGLE_CLIENT_ID:google-client-id}
-            client-secret: ${GOOGLE_CLIENT_SECRET:google-client-secret}
-            scope: openid, https://www.googleapis.com/auth/userinfo.profile, https://www.googleapis.com/auth/userinfo.email
-            client-name: Sign in with Google
           github-idp:
             provider: github
-            client-id: ${GITHUB_CLIENT_ID:github-client-id}
-            client-secret: ${GITHUB_CLIENT_SECRET:github-client-secret}
+            client-id: 2205af0f0cc93e3a22ea
+            client-secret: 649d88df840a57d2591c4832b438cc9af2727240
+#            redirect-uri: http://192.168.56.1:9000/login/oauth2/code/github-idp
             scope: user:email, read:user
             client-name: Sign in with GitHub
+          gitee:
+            # 指定oauth登录提供者，该oauth登录由provider中的gitee来处理
+            provider: gitee
+            # 客户端名字
+            client-name: Sign in with Gitee
+            # 认证方式
+            authorization-grant-type: authorization_code
+            # 客户端id，使用自己的gitee的客户端id
+            client-id: 29b85c97ed682910eaa4276d84a0c4532f00b962e1b9fe8552520129e65ae432
+            # 客户端秘钥，使用自己的gitee的客户端秘钥
+            client-secret: 8c6df920482a83d4662a34b76a9c3a62c8e80713e4f2957bb0459c3ceb70d73b
+            # 回调地址 与gitee 配置的回调地址一致才行
+            redirect-uri: http://192.168.56.1:9000/login/oauth2/code/gitee
+            # 申请scope列表
+            scope:
+              - emails
+              - user_info
         provider:
-          google:
-            user-name-attribute: email
           github:
             user-name-attribute: login
+          gitee:
+            # 设置用户信息响应体中账号的字段
+            user-name-attribute: login
+            # 获取token的地址
+            token-uri: https://gitee.com/oauth/token
+            # 获取用户信息的地址
+            user-info-uri: https://gitee.com/api/v5/user
+            # 发起授权申请的地址
+            authorization-uri: https://gitee.com/oauth/authorize
 
 logging:
   level:
@@ -30,3 +49,4 @@ logging:
     org.springframework.web: INFO
     org.springframework.security: debug
     org.springframework.security.oauth2: debug
+    org.springframework.security.oauth2.client: trace

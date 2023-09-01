@@ -15,6 +15,7 @@
  */
 package sample.config;
 
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
@@ -52,6 +53,7 @@ public class DefaultSecurityConfig {
 								.requestMatchers("/assets/**", "/webjars/**", "/login","/oauth2/**","/oauth2/token").permitAll() //② 忽略鉴权的url
 								.anyRequest().authenticated()//③ 排除忽略的其他url就需要鉴权了
 				)
+				.csrf(AbstractHttpConfigurer::disable)
 				.formLogin(formLogin ->
 						formLogin
 								.loginPage("/login")//④ 授权服务认证页面（可以配置相对和绝对地址，前后端分离的情况下填前端的url）

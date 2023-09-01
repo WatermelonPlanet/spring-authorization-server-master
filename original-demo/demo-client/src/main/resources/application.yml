@@ -5,9 +5,9 @@ logging:
   level:
     root: INFO
     org.springframework.web: INFO
-    org.springframework.security: debug
-    org.springframework.security.oauth2: debug
-    org.springframework.security.oauth2.client: debug
+    org.springframework.security: trace
+    org.springframework.security.oauth2: trace
+    org.springframework.security.oauth2.client: trace
 
 spring:
   thymeleaf:
@@ -48,7 +48,7 @@ spring:
             client-name: messaging-client-device-code
         provider:
           spring:
-            issuer-uri: http://localhost:9000
+            issuer-uri: http://192.168.56.1:9000
 
 messages:
   base-uri: http://127.0.0.1:8090/messages

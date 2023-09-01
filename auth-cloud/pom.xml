@@ -7,21 +7,12 @@
         <groupId>com.oauth2</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
-
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.original.demo</groupId>
-    <artifactId>original-demo</artifactId>
-    <description> spring authorization server 基于maven构建的官方原始demo</description>
+    <artifactId>auth-cloud</artifactId>
     <packaging>pom</packaging>
+    <description>一个微服务架构的授权、认证脚手架</description>
 
-
-    <modules>
-        <module>demo-authorizationserver</module>
-        <module>messages-resource</module>
-        <module>demo-client</module>
-    </modules>
 
 
 
