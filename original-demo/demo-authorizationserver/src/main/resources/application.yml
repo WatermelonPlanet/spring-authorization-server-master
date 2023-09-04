@@ -10,7 +10,7 @@ spring:
             provider: github
             client-id: 2205af0f0cc93e3a22ea
             client-secret: 649d88df840a57d2591c4832b438cc9af2727240
-#            redirect-uri: http://192.168.56.1:9000/login/oauth2/code/github-idp
+#            redirect-uri: http://192.168.56.1:9000/login/oauth2/code/github-idp # 这个地方可以不配置，配置就要与github的应用配置回调一致
             scope: user:email, read:user
             client-name: Sign in with GitHub
           gitee:
@@ -34,7 +34,7 @@ spring:
           github:
             user-name-attribute: login
           gitee:
-            # 设置用户信息响应体中账号的字段
+            # 设置用户信息名称对应的字段属性
             user-name-attribute: login
             # 获取token的地址
             token-uri: https://gitee.com/oauth/token
