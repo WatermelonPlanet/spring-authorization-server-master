@@ -1,4 +1,4 @@
-## 😄Spring Authorization Server (1) oauth2.1、oidc 1.0 初步认识
+## 😄Spring Authorization Server (1) oauth2.1、oidc 1.0 概念初步认识和基于maven的demo源码
 
 ### Spring Authorization Server 是什么呢？
 

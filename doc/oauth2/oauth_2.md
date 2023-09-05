@@ -204,7 +204,7 @@
       oauth2:
         client:
           registration:
-             messaging-client-oidc:
+             messaging-client-oidc: # 这个是我们自己定义客户端
                 provider: spring 
                 client-id: messaging-client #客户端id
                 client-secret: secret # 客户端id
@@ -214,7 +214,7 @@
                 client-name: messaging-client-oidc
           provider:
             spring:
-              issuer-uri: http://localhost:9000 #
+              issuer-uri: http://localhost:9000 # 这个对应的是我们自己的授权服务器
   ````
 
 ### 运行demo
