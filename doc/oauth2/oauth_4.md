@@ -210,7 +210,9 @@ public class OAuth2LoginAuthenticationFilter extends AbstractAuthenticationProce
 }
 ````
 
+
 ![img_4day_3.png](image/img_4day_3.png)
+
 
 `DefaultAuthorizationCodeTokenResponseClient` 帮我们做了拿code去获取token这个流程，gitee 就成功授权给 demo-authorizationserver 服务了
 
