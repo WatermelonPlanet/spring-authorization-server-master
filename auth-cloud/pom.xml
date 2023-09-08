@@ -3,17 +3,45 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-authorization-server-oauth2</artifactId>
-        <groupId>com.oauth2</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.0</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>auth-cloud</artifactId>
     <packaging>pom</packaging>
     <description>一个微服务架构的授权、认证脚手架</description>
+    <version>1.0-SNAPSHOT</version>
 
 
+    <!--    子模块-->
+    <modules>
+        <module>gateway-server</module>
+    </modules>
+
+
+
+    <!--    依赖版本-->
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <spring.boot.version>3.1.0</spring.boot.version>
+        <spring-security-oauth2.version>1.1.1</spring-security-oauth2.version>
+    </properties>
+
+    <!--    依赖管理-->
+    <dependencyManagement>
+        <dependencies>
+            <!-- spring-security-oauth2-authorization-server 依赖 off-->
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-oauth2-authorization-server</artifactId>
+                <version>${spring-security-oauth2.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>
