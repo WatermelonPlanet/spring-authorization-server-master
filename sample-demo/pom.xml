@@ -11,8 +11,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.original.demo</groupId>
-    <artifactId>original-demo</artifactId>
+    <groupId>com.sample.demo</groupId>
+    <artifactId>sample-demo</artifactId>
     <description> spring authorization server 基于maven构建的官方原始demo</description>
     <packaging>pom</packaging>
 
