@@ -48,6 +48,6 @@ OpenID Connect 1.0 旨在通过在 OAuth 2.0 基础上添加身份验证和用�
 1. 👉 **[`spring-authorization-server官方文档`](https://docs.spring.io/spring-authorization-server/docs/current/reference/html/index.html)**
 2. 👉 **[`spring-security官方文档`](https://docs.spring.io/spring-security/reference/6.1-SNAPSHOT/servlet/oauth2/login/core.html)**
 3. 👉 **[`spring-authorization-server源码(源码里面有demo)`](https://github.com/spring-projects/spring-authorization-server)**
-4. 👉 **[基于maven的构建的spring-authorization-server源码demo](https://github.com/WatermelonPlanet/spring-authorization-server-demo/tree/master/original-demo)**
+4. 👉 **[基于maven的构建的spring-authorization-server源码demo](https://github.com/WatermelonPlanet/spring-authorization-server-master)**
 
 **别再去百度了，关键时刻还是得看官方文档，也必须学会，虽然官方文档是社区人员维护的，对初学者不友好，可以结合源码和文档一起看，都有进步的，本人也是菜，但是要提升，必须学会看官方的文档，然后去研究**
