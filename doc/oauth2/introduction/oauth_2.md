@@ -36,7 +36,7 @@
     }
     ````
 
-    ![img_2_1.png](./image/img_2_1.png)
+    ![img_2_1.png](image/img_2_1.png)
   - **登录成功后会进入授权页（oauth2/consent），进行确认授权**
 
     ````java
@@ -61,7 +61,7 @@
                     .build();
     ````
 
-    ![img_4.png](./image/img_4.png)
+    ![img_4.png](image/img_4.png)
   - **获取授权码-从url上获取“code=”后面的值**
     http://127.0.0.1:8080/login/oauth2/code/messaging-client-oidc?code=gMXmx2YHmwNFXMjXjgWaveNxspAEUy3q5Jc3m8h-NSjWzYbLAEmraDaUZkFhyBVTrRQlyDMWhePfEUe4Wb2g7sj1Q-mBq9HBTyCwL1qMvRNFEx-UTUtlVNFP7rZnfVWR
 

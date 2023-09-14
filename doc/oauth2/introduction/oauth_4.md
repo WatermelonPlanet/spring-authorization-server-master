@@ -237,9 +237,6 @@ demo-client 拿着 code 到 demo-authorizationserver换取token，然后  demo-a
 - 认证方式（授权码模式、密码模式、客户端模式、设备码模式）
 - 授权客户端
 
-
-
-
 #### oauth客户端认证、授权的流程图
 
 ![img_4day_4.png](image/img_4day_4.png)
