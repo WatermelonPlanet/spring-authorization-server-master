@@ -14,4 +14,6 @@
 - [😄Spring Authorization Server (4) 客户端、授权服务器认证授权流程的深入解析](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/introduction/oauth_4.md)
 
 2. spring-authorization-server 进阶
-   - 快马加鞭。。。
+- [😄Spring Authorization Server (5) RegisteredClientRepository、UserDetailsService、UserDetails扩展](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_5.md)
+
+更新中...
