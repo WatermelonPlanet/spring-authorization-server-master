@@ -185,6 +185,36 @@ public PasswordEncoder passwordEncoder() {
 }
 ````
 
+````java
+public static PasswordEncoder createDelegatingPasswordEncoder() {
+		String encodingId = "bcrypt";
+		Map<String, PasswordEncoder> encoders = new HashMap<>();
+		encoders.put(encodingId, new BCryptPasswordEncoder());
+		encoders.put("ldap", new org.springframework.security.crypto.password.LdapShaPasswordEncoder());
+		encoders.put("MD4", new org.springframework.security.crypto.password.Md4PasswordEncoder());
+		encoders.put("MD5", new org.springframework.security.crypto.password.MessageDigestPasswordEncoder("MD5"));
+		encoders.put("noop", org.springframework.security.crypto.password.NoOpPasswordEncoder.getInstance());
+		encoders.put("pbkdf2", Pbkdf2PasswordEncoder.defaultsForSpringSecurity_v5_5());
+		encoders.put("pbkdf2@SpringSecurity_v5_8", Pbkdf2PasswordEncoder.defaultsForSpringSecurity_v5_8());
+		encoders.put("scrypt", SCryptPasswordEncoder.defaultsForSpringSecurity_v4_1());
+		encoders.put("scrypt@SpringSecurity_v5_8", SCryptPasswordEncoder.defaultsForSpringSecurity_v5_8());
+		encoders.put("SHA-1", new org.springframework.security.crypto.password.MessageDigestPasswordEncoder("SHA-1"));
+		encoders.put("SHA-256",
+				new org.springframework.security.crypto.password.MessageDigestPasswordEncoder("SHA-256"));
+		encoders.put("sha256", new org.springframework.security.crypto.password.StandardPasswordEncoder());
+		encoders.put("argon2", Argon2PasswordEncoder.defaultsForSpringSecurity_v5_2());
+		encoders.put("argon2@SpringSecurity_v5_8", Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8());
+		return new DelegatingPasswordEncoder(encodingId, encoders);
+	}
+````
+
+`PasswordEncoder` 默认是 **bcrypt** 对应的就是 BCryptPasswordEncoder，如果要替换加密/解密方式，有如下两种解决方案
+
+①：重新创建一个授权类型（后面会单独写一遍如何扩展授权类型[短信登录扩展]）
+
+②：继承 `DaoAuthenticationProvider` 重写 *additionalAuthenticationChecks()*方法，目的是重现注入 `passwordEncoder`后再进行密码匹配
+
+
 #### UserDetails 扩展
 
 ````java
