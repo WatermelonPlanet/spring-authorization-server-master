@@ -16,5 +16,6 @@
 2. spring-authorization-server 进阶
 - [😄Spring Authorization Server (5) RegisteredClientRepository、UserDetailsService、UserDetails扩展](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_5.md)
 - [😄Spring Authorization Server (6) 授权类型扩展-手机号+短信登录](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_6.md)
+- [# 😄Spring Authorization Server (7) 第三方平台账号存储](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_7.md)
 
 更新中...
