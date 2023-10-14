@@ -17,5 +17,8 @@
 - [😄Spring Authorization Server (5) RegisteredClientRepository、UserDetailsService、UserDetails扩展](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_5.md)
 - [😄Spring Authorization Server (6) 授权类型扩展-手机号+短信登录](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_6.md)
 - [😄Spring Authorization Server (7) 第三方平台账号存储](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_7.md)
+- [# 🔥Spring Authorization Server (8) 授权服务默认登录-扩展（手机号+验证码）](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_8.md)
 
 更新中...
+
+### [🔥Spring Authorization Server 所有扩展code链接](https://github.com/WatermelonPlanet/watermelon-cloud)

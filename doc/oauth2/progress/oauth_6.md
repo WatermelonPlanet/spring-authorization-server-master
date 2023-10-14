@@ -1,4 +1,4 @@
-# 😄Spring Authorization Server (6) 授权类型扩展-手机号+短信登录
+# 😄Spring Authorization Server (6) oauth2授权模式-扩展（手机号+短信验证码）
 
 ### 授权码模式
 
@@ -940,7 +940,7 @@ public class AuthorizationServerConfig {
 
 }
 ````
-**用手机号+验证码来登录**
+**手机号+验证码**测试
 
 - 获取token
 ![img_6day_1.png](image/img_6day_1.png)
