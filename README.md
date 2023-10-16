@@ -1,4 +1,4 @@
-# spring-authorization-server | 入门到包会
+# 🔥spring-authorization-server | 入门到包会
 
 <div style="display: flex; justify-content: center;">
   <img src="doc/image/icon_0.png" style="max-width: 25%; margin: 0 5px;">
@@ -17,8 +17,10 @@
 - [😄Spring Authorization Server (5) RegisteredClientRepository、UserDetailsService、UserDetails扩展](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_5.md)
 - [😄Spring Authorization Server (6) 授权类型扩展-手机号+短信登录](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_6.md)
 - [😄Spring Authorization Server (7) 第三方平台账号存储](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_7.md)
-- [# 🔥Spring Authorization Server (8) 授权服务默认登录-扩展（手机号+验证码）](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_8.md)
+- [😄Spring Authorization Server (8) 授权服务默认登录-扩展（手机号+验证码）](https://github.com/WatermelonPlanet/spring-authorization-server-demo/blob/master/doc/oauth2/progress/oauth_8.md)
 
-更新中...
 
-### [🔥Spring Authorization Server 所有扩展code链接](https://github.com/WatermelonPlanet/watermelon-cloud)
+**spring-authorization-server** 目前就全部完结了，有时间再把文章再重写梳理精改一下。
+
+
+# [watermelon-cloud](https://github.com/WatermelonPlanet/watermelon-cloud) 基于springboot 3.1 、spring-authorization-server1.1.0 构建的spring-cloud架构 ，文章中的代码可在此项目中找到，（其他服务组件还在完善中....）

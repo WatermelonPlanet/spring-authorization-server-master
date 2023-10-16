@@ -904,4 +904,7 @@ public abstract class AbstractAuthenticationFilterConfigurer<B extends HttpSecur
 }
 ````
 
-根据 AbstractAuthenticationFilterConfigurer 初始化 SessionAuthenticationStrategy、SecurityContextRepository 进行初始化
+根据 AbstractAuthenticationFilterConfigurer 初始化 SessionAuthenticationStrategy、SecurityContextRepository 进行初始化我们自定义的filter
+
+
+### [🔥Spring Authorization Server 所有扩展code链接](https://github.com/WatermelonPlanet/watermelon-cloud)
