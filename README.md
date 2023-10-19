@@ -17,7 +17,7 @@
 
 >[🍉Spring Authorization Server (1) 认证、授权、oauth2概念和流程初步介绍](https://juejin.cn/post/7279402761414164534) \
 >[🍉Spring Authorization Server (2) 授权服务、资源服务、客户端核心配置讲解](https://juejin.cn/post/7279429009796923455) \
-> [🍉Spring Authorization Server (3) so seasy 集成第三方【gitee、github】oauth2登录](https://juejin.cn/post/7279629380748918803) \
+>[🍉Spring Authorization Server (3) so seasy 集成第三方【gitee、github】oauth2登录](https://juejin.cn/post/7279629380748918803) \
 >[🍉Spring Authorization Server (4) 客户端、资源服务、授权服务 源码加流程细讲 再也不绕路](https://juejin.cn/post/7280000052209664063)
 
 
