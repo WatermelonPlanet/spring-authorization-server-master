@@ -1,6 +1,4 @@
----
-theme: cyanosis
----
+# 🔥spring-authorization-server | 入门到包会
 
 <div style="display: flex; justify-content: center;">
   <img src="doc/image/icon_0.png" style="max-width: 25%; margin: 0 5px;">
@@ -8,6 +6,8 @@ theme: cyanosis
   <img src="doc/image/icon_2.png" style="max-width: 25%; margin: 0 5px;">
   <img src="doc/image/icon_3.png" style="max-width: 25%; margin: 0 5px;">
 </div>
+
+
 
 基于**Spring Boot 3.1、 Spring Authorization Server 1.1.0、spring-security 6.1.0** 讲解oauth2的认证、授权流程以及此基础上进行的扩展点。
 
